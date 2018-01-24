@@ -74,4 +74,11 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  $( ".menu-item a" ).click(function() {
+      var href = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(href).offset().top
+      }, 2000);
+  });
+
 })(jQuery); // Fully reference jQuery after this point.

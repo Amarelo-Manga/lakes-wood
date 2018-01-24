@@ -5,7 +5,6 @@
        	 	);
     $loop_banner = new WP_Query($args);
 ?>
-
 <div id="banner" class="carousel slide" data-ride="carousel">
   	<div class="carousel-inner content" role="listbox">
 		<?php 
@@ -18,7 +17,7 @@
 		    	}
 		?>    	
 		<div class="carousel-item <?php echo $active; ?>" style="background:url('<?php the_post_thumbnail_url(); ?>');
-    background-size: contain;background-repeat: no-repeat;" >
+    background-size: cover;background-repeat: no-repeat;" >
 	      	<div class="container">
 		      	<div class="row">
 		 			<div class="titulo col-lg-2 col-md-2 col-sm-12"><?php the_title(); ?></div>

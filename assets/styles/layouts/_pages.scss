@@ -30,6 +30,16 @@
 		}
 	}
 }
-
-
 .page-content{margin-bottom:50px;}
+
+#contato{
+	padding-top:50px;
+	input, textarea{width:100%;}
+	label{
+		color:#656867;
+		width: 100%;
+	}
+
+	input[type=submit]{background: #002b41;color: #fff;padding: 10px 20px;border: 0px;text-transform: uppercase;letter-spacing:0.5px;cursor: pointer;}
+}
+

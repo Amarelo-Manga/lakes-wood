@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div id="logo" class="">
-                <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+                <a class="brand" href="<?php echo get_home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri().'/assets/images/logo_lakes_wood.png'; ?>">
                 </a>
             </div>

@@ -6,22 +6,27 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div id="logo" class="">
-                <a class="brand" href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_lakes_wood.png'; ?>">
-                </a>
-            </div>
-            <div id="menu" class="">
-                <nav class="nav-primary">
-                    <?php
-                        if (has_nav_menu('primary_navigation')) :
-                        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-                    endif;
-                    ?>
-                </nav>
-            </div>
-        </div>
+    <div id="contentmenu">
+    	<div class="container">
+	        <div class="row">
+	            <div id="logo" class="">
+	                <a class="brand" href="<?php echo get_home_url(); ?>">
+	                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_lakes_wood.png'; ?>">
+	                </a>
+	                <a class="brand-scroll" href="<?php echo get_home_url(); ?>">
+	                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo-h-w-lakes-wood.png'; ?>">
+	                </a>
+	            </div>
+	            <div id="menu" class="">
+	                <nav class="nav-primary">
+	                    <?php
+	                        if (has_nav_menu('primary_navigation')) :
+	                        	wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+	                   		endif;
+	                    ?>
+	                </nav>
+	            </div>
+	        </div>
+    	</div>
     </div>
 </header>

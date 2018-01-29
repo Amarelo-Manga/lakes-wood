@@ -35,6 +35,12 @@
 	display: inline-block;
 	margin-top: -50px;
 	width: 20%;
+	.brand{
+    	display: block;
+    }
+    .brand-scroll{
+    	display: none;
+    }
 }
 
 #menu{
@@ -59,4 +65,36 @@
     		color:#fff;
     	}
 	}
+}
+
+.scroll{
+	position: fixed;
+    background: #002a41;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ffffffc4;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+    #logo{
+    	margin-top: 0px;
+    	.brand{
+	    	display: none;
+	    }
+	    .brand-scroll{
+	    	display: block;
+   		}
+    }
+    #menu{
+    	margin-top:30px;
+    	border:0px;
+    	ul{
+    		margin-bottom: 15px;
+    		a{
+    			color:#fff;
+    		}
+    	}
+   	}
 }
